@@ -1,5 +1,8 @@
 export start_monitor
 
+"""
+    Save CPU and MEM info to two files, respectively.
+"""
 function start_monitor(
     pid::Int64,
     fn::String;
