@@ -10,6 +10,8 @@ A simple package to monitor cpu and memory usage of a job with a given PID. Curr
 
 ## Usage
 
+Using the following function, two files, named `$fn.cpu` and `$fn.mem` will be used to save cpu and mem info, respectively.
+
 ```julia
 function start_monitor(
     pid::Int64,
