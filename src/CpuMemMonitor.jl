@@ -18,8 +18,13 @@ function start_monitor(
     fn::String;
     iterations::Int64 = 8,
     interval::Int64 = 1,
-    outer_interval::Int64 = 3600
+    outer_interval::Int64 = 3600,
+    kwargs...
 )
+    str = get(kwargs, :additionalStr, 0)
+    if str ≠ 0
+        fn *= str
+    end
 
     bash_script = "#!/bin/bash
 while true; do
