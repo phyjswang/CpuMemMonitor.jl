@@ -5,7 +5,7 @@ A simple package to monitor cpu and memory usage of a job with a given PID. Curr
 ## Installation
 
 ```julia
-] add https://github.com/phymann/CpuMemMonitor.jl
+] add CpuMemMonitor
 ```
 
 ## Usage
